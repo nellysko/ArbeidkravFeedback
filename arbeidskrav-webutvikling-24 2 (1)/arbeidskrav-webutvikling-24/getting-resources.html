@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Resources</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/getting-resources.css">
+    <script type="module" src="scripts/getting-resources.js"></script>
+    <link rel="icon" href="images/pickaxe-cursor.png">
+</head>
+<body>
+    <div class="header">
+        <h1>Armies of Zondor</h1>
+            <div class="menuSelection">
+              <h2><a href="gathering-army.html">Army store</a></h2>
+                <h2 id="menuSelected"><a href="getting-resources.html">Get Resources</a></h2>
+                <h2><a href="your-army.html">My army</a></h2>
+            </div>
+    </div>
+    <section class="resourceContainer">
+        <div class="resourceGatheringContainer">
+            <article>
+                <img id="mine" src="images/mines-of-thiartha.jpg" alt="Picture of a mine">
+            </article>
+            <article>
+                <img id="forest" src="images/woods-of-ghalduz.png" alt="Picture of a forest">
+            </article>
+        </div>
+        <div class="resourceDisplayContainer">
+            <div class="materialContainer">
+                <img class="icon" src="images/gold-coin.png" alt="Gold coin">
+                <p class="materialCounterTxt" id="goldCoinCount">0</p>
+            </div>
+            <div class="materialContainer">
+                <img class="icon" src="images/metal.png" alt="Metal">
+                <p class="materialCounterTxt" id="metalCount">0</p>
+            </div>
+            <div class="materialContainer">
+                <img class="icon" src="images/wood.png" alt="wood">
+                <p class="materialCounterTxt" id="woodCount">0</p>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>

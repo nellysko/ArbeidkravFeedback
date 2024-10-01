@@ -1,0 +1,277 @@
+/*
+    main.css is the usual name for a CSS which will be used on all/most pages.
+*/
+a{
+    text-decoration: none;
+    color: inherit
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgb(136, 214, 108), rgb(115, 187, 163));
+    background-attachment: fixed;
+}
+
+
+/*Classes*/
+
+.header {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #1abc9c;
+    color: white;
+    font-size: 12px;
+    padding-left: 2rem;
+    box-shadow: 4px 4px 16px rgb(0, 0, 0)
+}
+
+.menuSelection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 2rem;
+    gap: 2rem;
+}
+
+.icon{
+    width: 25%;
+    height: auto;
+    max-height: 100%; 
+}
+
+.icon--2{
+    width: 15%;
+    height: 15%;
+    margin-top: 12px;
+}
+
+.resourceContainer{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+}
+
+.resourceGatheringContainer{
+    width: 75%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.resourceDisplayContainer{
+    width: 25%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.545);
+}
+
+.materialContainer{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    align-items: center; 
+    padding: 0;
+}
+
+.materialCounterTxt{
+    font-size: 30px;
+    margin-left: 1rem;
+}
+
+.shopSection--1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    text-align: center;
+}
+
+.shopSection--2{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    justify-items: center;
+}
+.shopSection--3{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    justify-items: center;
+}
+
+.product-box{
+    display: grid;
+    justify-items: center;
+}
+
+.category{
+    color: rgb(235, 211, 248);
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.shopImg {
+    height: 300px;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.356);
+}
+
+.buyButton{
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin-top: 4px;
+    color:  rgb(235, 211, 248);
+    background-color: rgb(93, 53, 135);
+    border-radius: 8px;
+    border-color: rgb(235, 211, 248);
+    border-width: 3px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.7s;
+}
+
+.buyButton:hover{
+    height: 110%;
+    width: 104%;
+    box-shadow: 4px 4px 4px rgba(25, 20, 26, 0.589);
+}
+
+.buyButton--machine{
+    width: 20%;
+}
+
+.buyButton--machine:hover{
+    width: 22%;
+}
+
+.armyContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px;
+}
+
+
+.warriorsDisplay, .machinesDisplay, .animalsDisplay {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: rgba(255, 255, 255, 0.452);
+    width: 100%; 
+    height: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    gap: 1rem;
+    
+}
+
+
+.armyImg {
+    width: 100%; 
+    height: 150px;
+    border-radius: 4px;
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+}
+
+.resourceSection{
+    display: flex;
+    color: white;
+    width: 300px;
+    position: relative;
+    padding: 16px;
+    left: 40%;
+    justify-content: space-around;
+    background-color: rgba(255, 209, 227, 0.592);
+    font-size: 24px;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+/*ID´s*/
+#menuSelected{
+    color:black
+}
+
+#mine{
+    width: 100%;
+    height: auto;
+    border-radius: 70%;
+    border: 0.4rem solid black
+}
+
+
+#forest{
+    width: 100%;
+    height: auto;
+    border-radius: 70%;
+    border: 0.4rem solid black
+   
+}
+
+#forest:hover{
+    cursor: url('../images/axe-cursor.png'), auto;
+}
+
+#mine:hover{
+    cursor: url('../images/pickaxe-cursor.png'), auto;
+}
+
+#shopBody{
+    background-image: linear-gradient(rgb(82, 34, 88), rgb(46, 7, 63) ); 
+    margin-bottom: 54px;
+}
+
+
+#barracks{
+    background-image: linear-gradient(rgb(106, 156, 137), rgb(22, 66, 60));
+}
+
+#inputSection{
+    width: 184px;
+    height: 60px;
+    font-size: 20px;
+    color: rgb(22, 66, 60);
+    border: 2px solid rgba(0, 0, 0, 0.202);
+    background-color: rgba(255, 255, 255, 0.729);
+    border-width: 2px;
+    border-radius: 8px;
+    margin-left: 24px;
+    padding-left: 12px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+}
+
+/*Gridsystemet*/
+
+/*Mobil/tablet*/
+@media (max-width: 768px){
+    .col-sm-12{
+        grid-column: auto / span 12;
+    }
+}
+
+@media (max-width: 768px) {
+    .resourceGatheringContainer {
+        grid-template-columns: 1fr; /* One column in smaller screens */
+    }
+}
+

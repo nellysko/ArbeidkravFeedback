@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Army</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="scripts/your-army.js" defer></script> <!-- Add your JS file with defer -->
+    <link rel="icon" href="images/catapult.png">
+</head>
+
+<body id="barracks">
+    <div class="header">
+        <h1>Armies of Zondor</h1>
+        <div class="menuSelection">
+            <h2><a href="gathering-army.html">Army store</a></h2>
+            <h2><a href="getting-resources.html">Get Resources</a></h2>
+            <h2 id="menuSelected"><a href="your-army.html">My army</a></h2>
+        </div>
+    </div>
+
+    <div class="top-bar">
+        <div id="inputSection">
+            <label>Seach in your army</label> <br>
+            <input type="text" id="searchInput" placeholder="Search">
+        </div>
+        
+        <section class="resourceSection">
+            <img class="icon--2" src="images/gold-coin.png" alt="Gold coin">
+            <p id="goldCoinCount"></p>
+            <img class="icon--2" src="images/metal.png" alt="Metal">
+            <p id="metalCount"></p>
+            <img class="icon--2" src="images/wood.png" alt="wood">
+            <p id="woodCount"></p>
+        </section>
+    </div>
+
+    <div class="armyContainer">
+        <section class="warriorsDisplay">
+        </section>
+        <section class="machinesDisplay">
+        </section>
+        <section class="animalsDisplay">
+        </section>
+    </div>
+</body>
+</html>
